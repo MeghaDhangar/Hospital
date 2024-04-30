@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 'use client'
 import { useState } from 'react'
 import { Formik, Form, FieldArray, Field } from 'formik'
@@ -141,7 +142,10 @@ const DocUpdate = () => {
          })
          const data = await response.json()
          return data
-           console.log(error)
+         
+           
+      }catch(error){
+         console.log(error)
       }
    }
    return (

@@ -2,13 +2,10 @@
 import Typography from '@mui/material/Typography'
 import Paper from '@mui/material/Paper'
 import { styled } from '@mui/material/styles'
-import { useAddEmployeeMutation, useRegisterAuth } from '@/services/Query'
-// import Employee_Validation from '../../../components/FormValidation/employeeValidation'
+import { useAddEmployeeMutation } from '@/services/Query'
 import { colors } from '@/styles/theme'
 import AddEmployee from '@/components/AddEmployee'
-// import { toast } from 'react-toastify'
-import dynamic from 'next/dynamic'
-
+import dynamic from 'next/dynamic';
 
 const Employee_Validation = dynamic(() => import('../../../components/FormValidation/employeeValidation'), {
    ssr:false
@@ -56,7 +53,7 @@ const EmpRegister = () => {
    // eslint-disable-next-line no-unused-vars
    const [addemployee] = useAddEmployeeMutation()
    // eslint-disable-next-line no-unused-vars
-   const [addAuthEmployee] = useRegisterAuth()
+   // const [addAuthEmployee] = useRegisterAuth()
    return (
       <StyledFormWrapper>
          <StyledPaper elevation={3}>

@@ -20,7 +20,7 @@ import CustomAutocomplete from '@/components/Autocomplete/index'
 import Divider from '@mui/material/Divider'
 import Text from '@/components/Textfield/Text'
 import Paper from '@mui/material/Paper'
-import FORM_VALIDATION from '@/components/FormValidation/EmployeeValidation'
+import FORM_VALIDATION from '@/components/FormValidation/employeeValidation';
 import CloseIcon from '@mui/icons-material/Close'
 import { useAddEmployeeMutation } from '@/services/Query'
 
